@@ -1,7 +1,6 @@
 #include "list.h"
-// #include <stdio.h>
-// #include <unistd.h>
 // #include <stdlib.h>
+// #include <stdio.h>
 
 // int ascending(int a, int b)
 // {
@@ -10,62 +9,57 @@
 
 t_list	*sort_list(t_list* lst, int (*cmp)(int, int))
 {
-    t_list  *h;
-    int     tmp;
+    t_list *t;
+    int tmp;
 
-    h = lst;
-    while(lst->next)
+    t = lst;
+    while(t->next)
     {
-        if (!cmp(lst->data, lst->next->data))
+        if (!cmp(t->data, t->next->data))
         {
-            tmp = lst->data;
-            lst->data = lst->next->data;
-            lst->next->data = tmp;
-            lst = h;
-            continue;
+            tmp = t->data;
+            t->data = t->next->data;
+            t->next->data = tmp;
+            t = lst;
+            continue ;
         }
-        lst = lst->next;
+        t = t->next;
     }
-    return (h);
+    return (lst);
 }
 
 // int main()
 // {
 //     t_list *h1 = malloc(sizeof(t_list));
-//     h1->data = 5;
+//     h1->data = 89;
 //     h1->next = NULL;
 
 //     t_list *h2 = malloc(sizeof(t_list));
-//     h2->data = 5;
+//     h2->data = 3;
 //     h2->next = NULL;
 
 //     t_list *h3 = malloc(sizeof(t_list));
-//     h3->data = 1;
+//     h3->data = 9;
 //     h3->next = NULL;
-
-//     t_list *h4 = malloc(sizeof(t_list));
-//     h4->data = 99;
-//     h4->next = NULL;
 
 //     h1->next = h2;
 //     h2->next = h3;
-//     h3->next = h4;
 
-//     t_list *tmp = h1;
+//     t_list *tm;
 
-//     printf("before sort :\n");
-//     while(tmp)
+//     tm = h1;
+
+//     while(tm)
 //     {
-//         printf("->>>>>%d\n", tmp->data);
-//         tmp = tmp->next;
-//     }
-//     printf("%d\n\n", ascending(0, 99));
-//     tmp = sort_list(h1, ascending);
-//     printf("after sort :\n");
-//     while(tmp)
-//     {
-//         printf("->>>>>%d\n", tmp->data);
-//         tmp = tmp->next;
+//         printf("%d\n", tm->data);
+//         tm = tm->next;
 //     }
 
+//     tm = sort_list(h1, ascending);
+
+//     while(tm)
+//     {
+//         printf("%d\n", tm->data);
+//         tm = tm->next;
+//     }
 // }
