@@ -1,7 +1,0 @@
-----------------8<-------------[ START TEST 
-        💻 TEST
-./a.out "  starting and ending   "         🔎 YOUR OUTPUT:
-starting and ending  (null)$
-        🗝 EXPECTED OUTPUT:
-starting and ending (null)$
-----------------8<------------- END TEST ]
