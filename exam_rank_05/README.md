@@ -17,9 +17,7 @@ Thriving under pressure is a hallmark of a great Software Engineer. This exam te
 ## 🚀 Structure
 This folder contains the code for the exam exercises. They are built to test the core concepts learned in the preceding projects.
 
-## 🌐 Connect with me
+## 🌐 Connect With me
 [![GitHub](https://img.shields.io/badge/GitHub-black?logo=github)](https://github.com/Anasqabbal)
 [![LinkedIn](https://img.shields.io/badge/-IN-0A66C2?logo=linkedin&logoColor=0a66c2)](https://www.linkedin.com/in/anasqabbal/)
-
-
 
